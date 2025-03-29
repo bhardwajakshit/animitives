@@ -1,0 +1,34 @@
+'use client'
+
+import { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
+import { AnimatePresence } from 'framer-motion'
+import { ThemeProvider } from '@/components/common/theme-provider'
+import { Header } from '@/components/common/header'
+import { Footer } from '@/components/common/footer'
+
+export default function App({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname()
+  const [mounted, setMounted] = useState<boolean>(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) return null
+
+  return (
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="light"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <AnimatePresence>
+        <Header key="header" />
+        {children}
+        {pathname !== '/' && <Footer key="footer" />}
+      </AnimatePresence>
+    </ThemeProvider>
+  )
+}
