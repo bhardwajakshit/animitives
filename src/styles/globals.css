@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0, 0%, 100%;
+  --foreground: 240, 50%, 1%;
+
+  color-scheme: light;
+}
+
+.dark {
+  --background: 240, 50%, 1%;
+  --foreground: 0, 0%, 100%;
+
+  color-scheme: dark;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
