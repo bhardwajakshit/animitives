@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export const Footer = () => {
   return (
-    <footer className="mt-auto flex items-center justify-center py-5 text-sm">
+    <footer className="mt-auto flex items-center justify-center py-5 text-xs md:text-sm">
       Crafted by
       <a
         href="https://github.com/bhardwajakshit"

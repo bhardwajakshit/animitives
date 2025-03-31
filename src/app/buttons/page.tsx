@@ -69,8 +69,8 @@ export default function ButtonsPage() {
 
   return (
     <div className="h-full w-full">
-      <div className="px-24 pt-20">
-        <h1 className="mb-8 py-24 text-center text-lg font-normal">
+      <div className="px-12 pt-20 md:px-24">
+        <h1 className="mb-8 py-24 text-center text-sm font-normal md:text-lg 2xl:text-xl">
           A complete set of 50+ <AnimatedCustomizable text="customizable" />{' '}
           buttons designed to elevate your UI effortlessly.
         </h1>

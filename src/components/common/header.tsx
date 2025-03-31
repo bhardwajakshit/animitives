@@ -31,13 +31,13 @@ export const Header = () => {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }}
       className={cn(
-        'fixed left-0 right-0 top-0 z-[100] mx-auto flex items-center justify-between gap-4 px-6 py-3.5 transition-all duration-300',
+        'fixed left-0 right-0 top-0 z-[100] mx-auto flex items-center justify-between gap-4 px-4 py-3.5 transition-all duration-300 sm:px-6',
         isScrolled
           ? 'mt-4 max-w-5xl rounded-xl bg-neutral-100/80 shadow backdrop-blur-sm dark:bg-neutral-900/80'
           : 'max-w-6xl'
       )}
     >
-      <div className="flex items-center space-x-6">
+      <div className="flex items-center space-x-4 sm:space-x-6">
         <Link href="/" className="flex items-center space-x-2">
           <Logo />
           <h1 className="text-base font-medium">Animitives</h1>
@@ -58,7 +58,7 @@ export const Header = () => {
         ))}
       </div>
 
-      <div className="flex items-center space-x-6">
+      <div className="flex items-center space-x-4 sm:space-x-6">
         <ThemeChanger />
         <a
           href="https://github.com/bhardwajakshit/animitives"

@@ -19,7 +19,7 @@ export const ButtonGroup = React.memo(
   ({ label, buttons, onOpenModal }: ButtonGroupProps) => {
     return (
       <div className="mb-20 flex flex-col items-center justify-center">
-        <h1 className="mb-16 w-fit rounded-full bg-stone-200/60 px-6 py-2 text-xs font-medium text-stone-800 backdrop:blur-sm dark:bg-neutral-800/60 dark:text-neutral-300">
+        <h1 className="mb-16 w-fit rounded-full bg-stone-200/60 px-6 py-2 text-xs font-medium text-stone-800 backdrop:blur-sm dark:bg-neutral-800/60 dark:text-neutral-300 2xl:text-sm">
           {label}
         </h1>
         <div className="flex max-w-7xl flex-wrap items-center justify-center gap-4">
