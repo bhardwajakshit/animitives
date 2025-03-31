@@ -24,19 +24,19 @@ export const REQUIREMENTS: { [key: string]: Requirements } = {
     name: 'Framer Motion',
     link: 'https://www.npmjs.com/package/framer-motion',
     cmd: 'npm install framer-motion',
-    desc: 'Used for animations',
+    desc: 'for Animations.',
   },
   lucide_icons: {
     name: 'Lucide React',
     link: 'https://lucide.dev/',
     cmd: 'npm install lucide-react',
-    desc: 'Used for icons',
+    desc: 'for Icons.',
   },
   tailwindcss: {
     name: 'Tailwind CSS',
     link: 'https://tailwindcss.com/',
     cmd: 'npm install tailwindcss postcss autoprefixer',
-    desc: 'Used for styling',
+    desc: 'for Styling.',
   },
   clsx_twm: {
     name: 'CLSX & Tailwind Merge',
@@ -47,7 +47,7 @@ export const REQUIREMENTS: { [key: string]: Requirements } = {
     name: 'Confetti',
     link: 'https://www.npmjs.com/package/canvas-confetti',
     cmd: 'npm install canvas-confetti',
-    desc: 'Used for confetti',
+    desc: 'for Confetti.',
   },
 }
 
