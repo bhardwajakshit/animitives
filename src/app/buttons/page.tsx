@@ -24,7 +24,10 @@ export default function ButtonsPage() {
     document.body.style.overflow = 'hidden'
     setSelectedButton(button)
   }, [])
-  const handleCloseModal = useCallback(() => setSelectedButton(null), [])
+  const handleCloseModal = useCallback(() => {
+    document.body.style.overflow = ''
+    setSelectedButton(null)
+  }, [])
 
   const handleScroll = useCallback(() => {
     requestAnimationFrame(() => {

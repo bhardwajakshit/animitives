@@ -46,7 +46,7 @@ export const CodeBlock = ({ code }: { code: string }) => {
     <div className="relative w-full">
       <div
         dangerouslySetInnerHTML={{ __html: html }}
-        className="max-h-[50vh] min-h-0 overflow-y-auto rounded-xl bg-code-background p-4 text-sm outline-none [&_code]:whitespace-pre-wrap [&_pre]:outline-none"
+        className="h-[470px] min-h-0 overflow-y-auto rounded-xl bg-code-background p-4 text-sm outline-none [&_code]:whitespace-pre-wrap [&_pre]:outline-none"
       />
       <motion.button
         whileTap={{ scale: 0.9 }}
