@@ -20,10 +20,10 @@ export default function ButtonsPage() {
   const [selectedButton, setSelectedButton] =
     useState<SelectedButtonProps | null>(null)
 
-  const handleOpenModal = useCallback(
-    (button: SelectedButtonProps) => setSelectedButton(button),
-    []
-  )
+  const handleOpenModal = useCallback((button: SelectedButtonProps) => {
+    document.body.style.overflow = 'hidden'
+    setSelectedButton(button)
+  }, [])
   const handleCloseModal = useCallback(() => setSelectedButton(null), [])
 
   const handleScroll = useCallback(() => {
