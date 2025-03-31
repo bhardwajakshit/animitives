@@ -87,7 +87,7 @@ export const TextStaggerDemo = () => {
     <div className="my-32">
       <StaggerText
         text="Animitives"
-        className="text-lg font-medium text-black dark:text-white"
+        className="text-lg font-normal text-black dark:text-white"
         delay={0.1}
         duration={0.4}
       />
