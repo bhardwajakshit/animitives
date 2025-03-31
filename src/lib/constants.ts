@@ -44,7 +44,7 @@ export const REQUIREMENTS: { [key: string]: Requirements } = {
     desc: 'Create a lib/cn.ts file and add the following code for managing Tailwind Classes',
   },
   confetti: {
-    name: 'Confetti',
+    name: 'Canvas Confetti',
     link: 'https://www.npmjs.com/package/canvas-confetti',
     cmd: 'npm install canvas-confetti',
     desc: 'for Confetti.',
