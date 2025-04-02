@@ -10,6 +10,10 @@ import { ComponentCard } from '@/components/components-page/component-card'
 import MobileViewWrapper from '@/components/components-page/mobile-view-wrapper'
 import { Footer } from '@/components/common/footer'
 
+interface Params {
+  category: string
+}
+
 const getComponentCode = (filePath: string) => {
   try {
     const code = fs.readFileSync(filePath, 'utf-8')
@@ -20,7 +24,7 @@ const getComponentCode = (filePath: string) => {
   }
 }
 
-const ComponentsPage = async ({ params }: { params: { category: string } }) => {
+const ComponentsPage = async ({ params }: { params: Promise<Params> }) => {
   const { category } = await params
 
   if (!ComponentConfigs[category]) {
