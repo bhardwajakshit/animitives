@@ -2,7 +2,7 @@
 
 A free and open-source collection of beautifully crafted animated UI components built with Framer Motion and Tailwind CSS. Copy, customize, and use them in your projects effortlessly.
 
-![Animitives Preview](https://animitives.com/preview.png)
+![Animitives Preview](https://raw.githubusercontent.com/bhardwajakshit/animitives/refs/heads/main/public/preview.png)
 
 ## Usage
 
