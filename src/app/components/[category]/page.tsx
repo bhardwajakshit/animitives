@@ -10,7 +10,7 @@ import { ComponentCard } from '@/components/components-page/component-card'
 import MobileViewWrapper from '@/components/components-page/mobile-view-wrapper'
 import { Footer } from '@/components/common/footer'
 
-export const getComponentCode = (filePath: string) => {
+const getComponentCode = (filePath: string) => {
   try {
     const code = fs.readFileSync(filePath, 'utf-8')
     return code
