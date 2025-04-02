@@ -5,6 +5,7 @@ import { ButtonComponent, ButtonConfigs } from '@/core/configs/button-configs'
 import ButtonModal from '@/components/buttons-page/button-modal'
 import { AnimatedCustomizable } from '@/components/buttons-page/animated-text'
 import { ButtonGroup } from '@/components/buttons-page/button-group'
+import { Footer } from '@/components/common/footer'
 
 export interface SelectedButtonProps {
   id: string
@@ -92,6 +93,8 @@ export default function ButtonsPage() {
       </div>
 
       {renderModal()}
+
+      <Footer />
     </div>
   )
 }
