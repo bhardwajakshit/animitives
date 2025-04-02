@@ -46,7 +46,7 @@ export const Header = () => {
         {headerCommonLinks.map((item) => (
           <Link key={item.id} href={item.url}>
             <span
-              className={`relative text-sm font-medium transition-colors duration-300 after:absolute after:bottom-[-3.5px] after:left-0 after:h-[2px] after:w-full after:bg-neutral-900 after:transition-transform after:duration-300 dark:after:bg-neutral-100 ${
+              className={`relative text-xs font-medium transition-colors duration-300 after:absolute after:bottom-[-3.5px] after:left-0 after:h-[2px] after:w-full after:bg-neutral-900 after:transition-transform after:duration-300 dark:after:bg-neutral-100 md:text-sm ${
                 pathname.includes(item.url)
                   ? 'text-neutral-900 after:scale-x-100 dark:text-neutral-100'
                   : 'after:scale-x-0'
